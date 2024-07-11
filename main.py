@@ -48,5 +48,5 @@ for epoch in range(num_epochs):
 with torch.no_grad():
     test_input = torch.randn(10, 10).to(device)
     predictions = model(test_input)
-    print("Sample predictions:")
+    print(f"Sample predictions: {device}")
     print(predictions.squeeze().cpu().numpy())
